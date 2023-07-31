@@ -1,10 +1,10 @@
-# ** CriminalIP-data-STIX**
+# **CriminalIP-data-STIX**
 
 - The repository contains Criminal IP Asset Search data in STIX 2.1 JSON format, enabling a quick understanding of threat information for 
 specific IPs.
 
 
-# 1. About 
+# About 
 -   To access IP and domain data, you will need a Criminal IP API key. You can sign up for free at [https://www.criminalip.io/](https://www.criminalip.io/) and obtain your API key from the "My Information" section on the Criminal IP website.
 
 ## Criminal IP
@@ -21,7 +21,7 @@ threat information about specific IPs by converting CIP Asset Search-based data 
 
 
 
-# 2. Description
+# Description
 This repository consists of two parts:
 -  For Enterprise Use (Multiple High-speed APIs provided):
     - You can receive JSON values quickly. 
@@ -30,8 +30,10 @@ This repository consists of two parts:
     - You can identify relationships between multiple IP addresses.
 
 
-# 3. Install 
-You can install the file based on your subscribed Criminal IP plan.
+# Install 
+[You need to install the currently supported library for STIX.](https://pypi.org/project/stix2/) 
+
+Then, you can download the file based on your subscribed Criminal IP plan and install it. 
 - CriminalIP_Enterprise_STIX
 - CriminalIP_AnotherPlan_STIX
 
@@ -41,7 +43,7 @@ git clone https://github.com/criminalip/CriminalIP_Enterprise_STIX.git
 git clone https://github.com/criminalip/CriminalIP_AnotherPlan_STIX.git
 ```
 
-# 4. Usage
+# Usage
 Precautions to take before running the tool: 
 Check your remaining credit usage, especially for Free, Freelancer, and Small Business use. Sufficient credits are essential for properly visualizing 
 malicious activities in the STIX format, which relies on JSON code.
@@ -64,7 +66,7 @@ python Enterprise_request_data_by_criminalip.py
 python AnotherPlan_request_data_by_criminalip.py
 ```
 
-# 5. Application
+# Application
 ### A portion of the JSON in STIX format
 ---
 ```json
@@ -116,11 +118,12 @@ To visualize the JSON code above in graph format, you can check it at the link b
 
 
 ### Graph of a portion of the output JSON result
----
-![이미지](웹 사이트 경로)
+![Graph](https://github.com/criminalip/CriminalIP-data-STIX/blob/main/CriminalIP-data-STIX_image/CriminalIP-data-STIX.png)
 
 
-# 6. Error Code
+
+
+# Error Code
 Below are the descriptions for each error code
 --
     - "Your CriminalIP API key is invalid": This error occurs when the API key is entered incorrectly.
