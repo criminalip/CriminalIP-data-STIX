@@ -126,8 +126,8 @@ To visualize the JSON code above in graph format, you can check it at the link b
 # Error Code
 Below are the descriptions for each error code
 --
-    - "Your CriminalIP API key is invalid": This error occurs when the API key is entered incorrectly.
+    - "Your Criminal IP API key is invalid": This error occurs when the API key is entered incorrectly.
     - "An unexpected error occurred": This error occurs when the CIP API server has failed. If you receive this error code, please try again later, or contact us at support@aispera.com.
     - "The target must be an IP address": This error occurs when you enter an incorrect argument value instead of providing an IP address in the target variable.
-    - "Unable to call api at the same time": This error occurs when you are not an Enterprise plan user and attempt to make concurrent API calls, which is restricted.
+    - "Unable to call API at the same time": This error occurs when you are not an Enterprise plan user and attempt to make concurrent API calls, which is restricted.
     - "Limit exceeded": This error occurs when you have exhausted all your credits.
