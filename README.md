@@ -113,6 +113,9 @@ python AnotherPlan_request_data_by_criminalip.py
      ]
     }
 ```
+The detailed json file above can be found in the file below.
+ [See the full JSON data here](./Criminalip_STIX_type.json)
+
 To visualize the JSON code above in graph format, you can check it at the link below.
 - STIX Viewer: https://oasis-open.github.io/cti-stix-visualization/
 
