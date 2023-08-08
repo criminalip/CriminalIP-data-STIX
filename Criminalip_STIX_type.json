@@ -1,0 +1,665 @@
+{
+    "type": "bundle",
+    "id": "bundle--014e8737-98ce-4449-894d-fee5768a929b",
+    "objects": [
+        {
+            "type": "autonomous-system",
+            "spec_version": "2.1",
+            "id": "autonomous-system--d0e2ffd7-216e-56a3-a994-ae5dbae3c318",
+            "number": 8100,
+            "name": "ASN-QUADRANET-GLOBAL"
+        },
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--7f6c8326-397a-4403-9bb7-a990ed1c7339",
+            "created": "2023-08-07T09:03:11.309395Z",
+            "modified": "2023-08-07T09:03:11.309395Z",
+            "name": "us",
+            "description": "Indicates the location of the band of the owner of this ip.",
+            "latitude": 37.751,
+            "longitude": -97.822,
+            "region": "None",
+            "country": "us",
+            "city": "None"
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--7be311b4-cfae-4eec-862d-6e0ca2fce4f6",
+            "created": "2023-08-07T09:03:11.310385Z",
+            "modified": "2023-08-07T09:03:11.310385Z",
+            "name": "Location",
+            "description": "You can find the location of the as_Location and the information of the owner who has this ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "autonomous-system--d0e2ffd7-216e-56a3-a994-ae5dbae3c318"
+            ]
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--7be311b4-cfae-4eec-862d-6e0ca2fce4f6",
+            "created": "2023-08-07T09:03:11.310385Z",
+            "modified": "2023-08-07T09:03:11.310385Z",
+            "name": "Location",
+            "description": "You can find the location of the as_Location and the information of the owner who has this ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "autonomous-system--d0e2ffd7-216e-56a3-a994-ae5dbae3c318"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7009c54f-6d07-4211-8156-c1226a8ac69d",
+            "created": "2023-08-07T09:03:11.311872Z",
+            "modified": "2023-08-07T09:03:11.311872Z",
+            "relationship_type": "related-to",
+            "source_ref": "grouping--7be311b4-cfae-4eec-862d-6e0ca2fce4f6",
+            "target_ref": "location--7f6c8326-397a-4403-9bb7-a990ed1c7339"
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "created": "2023-08-07T09:03:11.822517Z",
+            "modified": "2023-08-07T09:03:11.822517Z",
+            "name": "port",
+            "description": "The currently open port connected to the ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "course-of-action--2a021003-54ad-408b-916c-76007dbb976a"
+            ]
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "created": "2023-08-07T09:03:11.822517Z",
+            "modified": "2023-08-07T09:03:11.822517Z",
+            "name": "port",
+            "description": "The currently open port connected to the ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "course-of-action--2a021003-54ad-408b-916c-76007dbb976a"
+            ]
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "created": "2023-08-07T09:03:11.822517Z",
+            "modified": "2023-08-07T09:03:11.822517Z",
+            "name": "port",
+            "description": "The currently open port connected to the ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "course-of-action--2a021003-54ad-408b-916c-76007dbb976a"
+            ]
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "created": "2023-08-07T09:03:11.822517Z",
+            "modified": "2023-08-07T09:03:11.822517Z",
+            "name": "port",
+            "description": "The currently open port connected to the ip.",
+            "context": "unspecified",
+            "object_refs": [
+                "course-of-action--2a021003-54ad-408b-916c-76007dbb976a"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--8ff8bb5a-358d-48a7-a287-84361ab4133f",
+            "created": "2023-08-07T09:03:11.822517Z",
+            "modified": "2023-08-07T09:03:11.822517Z",
+            "relationship_type": "related-to",
+            "source_ref": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "target_ref": "course-of-action--22ba5164-c858-457f-b6f9-59c9f0d9182c"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--18e52f8f-a27e-4d8e-bd57-6220206460d0",
+            "created": "2023-08-07T09:03:11.82303Z",
+            "modified": "2023-08-07T09:03:11.82303Z",
+            "relationship_type": "related-to",
+            "source_ref": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "target_ref": "course-of-action--f153667e-b6db-4a32-9c92-6d4b6c867050"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--832a0792-5821-4ea1-b154-156188047799",
+            "created": "2023-08-07T09:03:11.82303Z",
+            "modified": "2023-08-07T09:03:11.82303Z",
+            "relationship_type": "related-to",
+            "source_ref": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6",
+            "target_ref": "course-of-action--eb1663c0-d8b5-4af9-9bd9-ae5fb4d08026"
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--2a021003-54ad-408b-916c-76007dbb976a",
+            "created": "2023-08-07T09:03:11.313856Z",
+            "modified": "2023-08-07T09:03:11.313856Z",
+            "name": "443",
+            "description": "There is an open port 443 currently using cloudflare/Unknown on that IP. If it's a port you're not using, stop it."
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--22ba5164-c858-457f-b6f9-59c9f0d9182c",
+            "created": "2023-08-07T09:03:11.319312Z",
+            "modified": "2023-08-07T09:03:11.319312Z",
+            "name": "21",
+            "description": "There is an open port 21 currently using Multicraft ftpd/2.3.5 on that IP. If it's a port you're not using, stop it."
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--f153667e-b6db-4a32-9c92-6d4b6c867050",
+            "created": "2023-08-07T09:03:11.32328Z",
+            "modified": "2023-08-07T09:03:11.32328Z",
+            "name": "80",
+            "description": "There is an open port 80 currently using cloudflare/Unknown on that IP. If it's a port you're not using, stop it."
+        },
+        {
+            "type": "course-of-action",
+            "spec_version": "2.1",
+            "id": "course-of-action--eb1663c0-d8b5-4af9-9bd9-ae5fb4d08026",
+            "created": "2023-08-07T09:03:11.325761Z",
+            "modified": "2023-08-07T09:03:11.325761Z",
+            "name": "3306",
+            "description": "There is an open port 3306 currently using MySQL/8.0.33 on that IP. If it's a port you're not using, stop it."
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5381e264-4cda-47ba-8ac4-705b0fb8b3f5",
+            "created": "2023-08-07T09:03:11.318321Z",
+            "modified": "2023-08-07T09:03:11.318321Z",
+            "relationship_type": "related-to",
+            "source_ref": "course-of-action--2a021003-54ad-408b-916c-76007dbb976a",
+            "target_ref": "software--0a5c7f4c-66c0-5cd9-a4d0-507792e66b4d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--75910bfc-02a0-4c51-8b64-c3d485c796db",
+            "created": "2023-08-07T09:03:11.322785Z",
+            "modified": "2023-08-07T09:03:11.322785Z",
+            "relationship_type": "related-to",
+            "source_ref": "course-of-action--22ba5164-c858-457f-b6f9-59c9f0d9182c",
+            "target_ref": "software--67c5c002-4d36-5fa0-b72f-5708bfa4072f"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--63dd1a95-5bb8-4791-835b-7b031e778e1d",
+            "created": "2023-08-07T09:03:11.32477Z",
+            "modified": "2023-08-07T09:03:11.32477Z",
+            "relationship_type": "related-to",
+            "source_ref": "course-of-action--f153667e-b6db-4a32-9c92-6d4b6c867050",
+            "target_ref": "software--0a5c7f4c-66c0-5cd9-a4d0-507792e66b4d"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b89f93c9-54d6-4ec4-827d-8b0aa9ff9b91",
+            "created": "2023-08-07T09:03:11.822022Z",
+            "modified": "2023-08-07T09:03:11.822022Z",
+            "relationship_type": "related-to",
+            "source_ref": "course-of-action--eb1663c0-d8b5-4af9-9bd9-ae5fb4d08026",
+            "target_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500"
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "name": "MySQL",
+            "vendor": "MySQL",
+            "version": "8.0.33"
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--caf5e897-e2a0-4db7-b7c9-178e45982c70",
+            "created": "2023-08-07T09:03:11.704166Z",
+            "modified": "2023-08-07T09:03:11.704166Z",
+            "name": "CVE-2023-22058",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: DDL).  Supported versions that are affected are 8.0.33 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22058"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--dd75ecc7-3edc-4115-bddd-94389debce77",
+            "created": "2023-08-07T09:03:11.724938Z",
+            "modified": "2023-08-07T09:03:11.724938Z",
+            "name": "CVE-2023-22057",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22057"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--0b759d4f-9507-474a-babf-d2ee66b7bc39",
+            "created": "2023-08-07T09:03:11.692926Z",
+            "modified": "2023-08-07T09:03:11.692926Z",
+            "name": "CVE-2023-22056",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22056"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--587169f9-71db-40a0-a4d4-68db7c8a60bb",
+            "created": "2023-08-07T09:03:11.608706Z",
+            "modified": "2023-08-07T09:03:11.608706Z",
+            "name": "CVE-2023-22054",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22054"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--57a2dd03-063a-4fef-9638-dbc521e4903b",
+            "created": "2023-08-07T09:03:11.704669Z",
+            "modified": "2023-08-07T09:03:11.704669Z",
+            "name": "CVE-2023-22053",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Client programs).  Supported versions that are affected are 5.7.42 and prior and  8.0.33 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server and  unauthorized read access to a subset of MySQL Server accessible data. CVSS 3.1 Base Score 5.9 (Confidentiality and Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22053"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--ca58903f-5f39-4b58-844c-40e8b6a2bbf7",
+            "created": "2023-08-07T09:03:11.781542Z",
+            "modified": "2023-08-07T09:03:11.781542Z",
+            "name": "CVE-2023-22048",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Pluggable Auth).  Supported versions that are affected are 8.0.33 and prior. Difficult to exploit vulnerability allows low privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in  unauthorized read access to a subset of MySQL Server accessible data. CVSS 3.1 Base Score 3.1 (Confidentiality impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:N).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22048"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--675aa49d-bdf8-49e4-a256-ad5d52b38435",
+            "created": "2023-08-07T09:03:11.742303Z",
+            "modified": "2023-08-07T09:03:11.742303Z",
+            "name": "CVE-2023-22046",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Optimizer).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22046"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--0d920d7a-4000-4a96-8e7f-cc98c3c77285",
+            "created": "2023-08-07T09:03:11.730871Z",
+            "modified": "2023-08-07T09:03:11.730871Z",
+            "name": "CVE-2023-22038",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Security: Privileges).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in  unauthorized update, insert or delete access to some of MySQL Server accessible data. CVSS 3.1 Base Score 2.7 (Integrity impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22038"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--c3fd5e24-2be1-4cd3-8ea4-1e5a1659e3d3",
+            "created": "2023-08-07T09:03:11.820534Z",
+            "modified": "2023-08-07T09:03:11.820534Z",
+            "name": "CVE-2023-22033",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.33 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22033"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--1325b7c4-342f-477d-a048-91d412aed6bc",
+            "created": "2023-08-07T09:03:11.757563Z",
+            "modified": "2023-08-07T09:03:11.757563Z",
+            "name": "CVE-2023-22008",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: InnoDB).  Supported versions that are affected are 8.0.33 and prior. Easily exploitable vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.9 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22008"
+                }
+            ]
+        },
+        {
+            "type": "vulnerability",
+            "spec_version": "2.1",
+            "id": "vulnerability--31f7a591-31c6-4237-b452-109d875db7d6",
+            "created": "2023-08-07T09:03:11.729887Z",
+            "modified": "2023-08-07T09:03:11.729887Z",
+            "name": "CVE-2023-22005",
+            "description": "Vulnerability in the MySQL Server product of Oracle MySQL (component: Server: Replication).  Supported versions that are affected are 8.0.33 and prior. Difficult to exploit vulnerability allows high privileged attacker with network access via multiple protocols to compromise MySQL Server.  Successful attacks of this vulnerability can result in unauthorized ability to cause a hang or frequently repeatable crash (complete DOS) of MySQL Server. CVSS 3.1 Base Score 4.4 (Availability impacts).  CVSS Vector: (CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:N/I:N/A:H).",
+            "external_references": [
+                {
+                    "source_name": "cve",
+                    "external_id": "CVE-2023-22005"
+                }
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--943d0261-e60e-46e4-b035-8f8cc3c96f3a",
+            "created": "2023-08-07T09:03:11.704166Z",
+            "modified": "2023-08-07T09:03:11.704166Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--caf5e897-e2a0-4db7-b7c9-178e45982c70"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--9dbbfa68-b370-4568-a806-e3677a496df9",
+            "created": "2023-08-07T09:03:11.725433Z",
+            "modified": "2023-08-07T09:03:11.725433Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--dd75ecc7-3edc-4115-bddd-94389debce77"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--bb892f7a-a127-4cc1-ac9e-8018c2b841f6",
+            "created": "2023-08-07T09:03:11.692926Z",
+            "modified": "2023-08-07T09:03:11.692926Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--0b759d4f-9507-474a-babf-d2ee66b7bc39"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--7d6ae688-9e60-4641-b603-b1a7964452da",
+            "created": "2023-08-07T09:03:11.609202Z",
+            "modified": "2023-08-07T09:03:11.609202Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--587169f9-71db-40a0-a4d4-68db7c8a60bb"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--77e1c05f-c630-48bf-80c0-877367f4ae54",
+            "created": "2023-08-07T09:03:11.705158Z",
+            "modified": "2023-08-07T09:03:11.705158Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--57a2dd03-063a-4fef-9638-dbc521e4903b"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--51fe2f2f-fa9d-4333-bff8-22804baee41f",
+            "created": "2023-08-07T09:03:11.78204Z",
+            "modified": "2023-08-07T09:03:11.78204Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--ca58903f-5f39-4b58-844c-40e8b6a2bbf7"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--dadf8a47-2e3e-4c43-93db-6fad75c3678c",
+            "created": "2023-08-07T09:03:11.742303Z",
+            "modified": "2023-08-07T09:03:11.742303Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--675aa49d-bdf8-49e4-a256-ad5d52b38435"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--4fe2cdc5-e3c3-40a4-bad5-c033e1d4a0f4",
+            "created": "2023-08-07T09:03:11.731367Z",
+            "modified": "2023-08-07T09:03:11.731367Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--0d920d7a-4000-4a96-8e7f-cc98c3c77285"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--74dcb002-520e-4861-b8bf-acedce7d6394",
+            "created": "2023-08-07T09:03:11.821029Z",
+            "modified": "2023-08-07T09:03:11.821029Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--c3fd5e24-2be1-4cd3-8ea4-1e5a1659e3d3"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--e4817114-f033-43f6-8c92-15e0b86006c0",
+            "created": "2023-08-07T09:03:11.758062Z",
+            "modified": "2023-08-07T09:03:11.758062Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--1325b7c4-342f-477d-a048-91d412aed6bc"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--3ce73d3d-b4c1-4357-9d95-7ef158b85705",
+            "created": "2023-08-07T09:03:11.729887Z",
+            "modified": "2023-08-07T09:03:11.729887Z",
+            "relationship_type": "Has",
+            "source_ref": "software--a57552ed-fc75-51d8-a4bd-3fe844bcc500",
+            "target_ref": "vulnerability--31f7a591-31c6-4237-b452-109d875db7d6"
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--0a5c7f4c-66c0-5cd9-a4d0-507792e66b4d",
+            "name": "Just a moment...",
+            "vendor": "cloudflare",
+            "version": "Unknown"
+        },
+        {
+            "type": "x509-certificate",
+            "spec_version": "2.1",
+            "id": "x509-certificate--c8e4d0bb-b7ab-4eeb-b767-11bb41e49f92",
+            "issuer": "C=US, O=Cloudflare, Inc., CN=Cloudflare Inc ECC CA-3",
+            "subject": "C=US, ST=California, L=San Francisco, O=Cloudflare, Inc., CN=sni.cloudflaressl.com",
+            "x509_v3_extensions": {
+                "basic_constraints": "caritical, CA:False"
+            }
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--5ac45393-592c-47d7-98cb-3af22825785b",
+            "created": "2023-08-07T09:03:11.317825Z",
+            "modified": "2023-08-07T09:03:11.317825Z",
+            "relationship_type": "related-to",
+            "source_ref": "software--0a5c7f4c-66c0-5cd9-a4d0-507792e66b4d",
+            "target_ref": "x509-certificate--c8e4d0bb-b7ab-4eeb-b767-11bb41e49f92"
+        },
+        {
+            "type": "url",
+            "spec_version": "2.1",
+            "id": "url--49a8d228-9757-5e65-b51a-a00ed52248c6",
+            "value": "sni.cloudflaressl.com"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--57d7c512-3f20-48d7-a134-722d3b246b98",
+            "created": "2023-08-07T09:03:11.317328Z",
+            "modified": "2023-08-07T09:03:11.317328Z",
+            "relationship_type": "related-to",
+            "source_ref": "x509-certificate--c8e4d0bb-b7ab-4eeb-b767-11bb41e49f92",
+            "target_ref": "url--49a8d228-9757-5e65-b51a-a00ed52248c6"
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--67c5c002-4d36-5fa0-b72f-5708bfa4072f",
+            "name": "Multicraft ftpd",
+            "vendor": "Multicraft ftpd",
+            "version": "2.3.5"
+        },
+        {
+            "type": "x509-certificate",
+            "spec_version": "2.1",
+            "id": "x509-certificate--973f8f0b-e98b-4165-81a3-9c355f5b14e4",
+            "issuer": "C=GB, ST=Greater Manchester, L=Salford, O=Sectigo Limited, CN=Sectigo RSA Domain Validation Secure Server CA",
+            "subject": "CN=*.bisecthosting.com",
+            "x509_v3_extensions": {
+                "basic_constraints": "caritical, CA:False"
+            }
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--20b47478-0f9d-42f2-a04e-0bbb00eb8697",
+            "created": "2023-08-07T09:03:11.322288Z",
+            "modified": "2023-08-07T09:03:11.322288Z",
+            "relationship_type": "related-to",
+            "source_ref": "software--67c5c002-4d36-5fa0-b72f-5708bfa4072f",
+            "target_ref": "x509-certificate--973f8f0b-e98b-4165-81a3-9c355f5b14e4"
+        },
+        {
+            "type": "url",
+            "spec_version": "2.1",
+            "id": "url--c6538be4-de5c-53e0-a357-665dfcac4912",
+            "value": "*.bisecthosting.com"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--ca1fa9e1-c351-4f81-b90c-37f3ee6ad920",
+            "created": "2023-08-07T09:03:11.321297Z",
+            "modified": "2023-08-07T09:03:11.321297Z",
+            "relationship_type": "related-to",
+            "source_ref": "x509-certificate--973f8f0b-e98b-4165-81a3-9c355f5b14e4",
+            "target_ref": "url--c6538be4-de5c-53e0-a357-665dfcac4912"
+        },
+        {
+            "type": "software",
+            "spec_version": "2.1",
+            "id": "software--0a5c7f4c-66c0-5cd9-a4d0-507792e66b4d",
+            "name": "Just a moment...",
+            "vendor": "cloudflare",
+            "version": "Unknown"
+        },
+        {
+            "type": "indicator",
+            "spec_version": "2.1",
+            "id": "indicator--0671fd48-8025-42e1-a279-204a24b633f2",
+            "created": "2023-08-07T09:03:11.82303Z",
+            "modified": "2023-08-07T09:03:11.82303Z",
+            "name": "unknowns",
+            "description": "The hash value of the content related to the certificate of the web page is written. Determine if the corresponding hash value is malicious or not.",
+            "indicator_types": [
+                "unknown"
+            ],
+            "pattern": "[web:hashes.'SHA-256'='b9748a82cafa7c5cfc3e872fe379aac7243446feadbb4d5932742f97b47da70c' OR web:hashes.'MD5'='fdd33cbbe241dd44adb0b1c974c3388a']",
+            "pattern_type": "stix",
+            "pattern_version": "2.1",
+            "valid_from": "2023-08-07T09:03:11.82303Z"
+        },
+        {
+            "type": "grouping",
+            "spec_version": "2.1",
+            "id": "grouping--c95b9fa3-7544-4773-a5ce-bc369e5500c7",
+            "created": "2023-08-07T09:03:11.831469Z",
+            "modified": "2023-08-07T09:03:11.831469Z",
+            "name": "unknown",
+            "description": "These are groups with activities such as Cloud service.",
+            "context": "unspecified",
+            "object_refs": [
+                "indicator--0671fd48-8025-42e1-a279-204a24b633f2"
+            ]
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--b8d3060e-5adc-4672-af8b-6311131d72ce",
+            "created": "2023-08-07T09:03:11.832462Z",
+            "modified": "2023-08-07T09:03:11.832462Z",
+            "relationship_type": "consiste-of",
+            "source_ref": "ipv4-addr--2dd9f387-ef07-51aa-83c2-8bae7054df72",
+            "target_ref": "grouping--7be311b4-cfae-4eec-862d-6e0ca2fce4f6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--063088ae-059b-4372-939c-6dd8d2402b7e",
+            "created": "2023-08-07T09:03:11.832462Z",
+            "modified": "2023-08-07T09:03:11.832462Z",
+            "relationship_type": "consiste-of",
+            "source_ref": "ipv4-addr--2dd9f387-ef07-51aa-83c2-8bae7054df72",
+            "target_ref": "grouping--d624d5c6-90e1-44bb-9e2e-3d4b8295d9e6"
+        },
+        {
+            "type": "relationship",
+            "spec_version": "2.1",
+            "id": "relationship--60e91a25-f975-436c-951b-a8edd1113dfa",
+            "created": "2023-08-07T09:03:11.832958Z",
+            "modified": "2023-08-07T09:03:11.832958Z",
+            "relationship_type": "consiste-of",
+            "source_ref": "ipv4-addr--2dd9f387-ef07-51aa-83c2-8bae7054df72",
+            "target_ref": "grouping--c95b9fa3-7544-4773-a5ce-bc369e5500c7"
+        },
+        {
+            "type": "ipv4-addr",
+            "spec_version": "2.1",
+            "id": "ipv4-addr--2dd9f387-ef07-51aa-83c2-8bae7054df72",
+            "value": "185.236.138.33"
+        }
+    ]
+}
