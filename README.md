@@ -56,7 +56,7 @@ Verify that the IP address you want to investigate is listed in the "ip.txt" fil
 ---
 Change the 'cip_KEY' part of config.py to The API_KEY issued from https://www.criminalip.io/mypage/information. 
 ```python
-cip_KEY = '${CRIMINALIP_API_KEY}'
+cip_API = '${CRIMINALIP_API_KEY}'
 ```
 
 ### excution python file
