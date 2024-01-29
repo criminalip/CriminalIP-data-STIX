@@ -2,6 +2,7 @@ import re
 from datetime import datetime, timedelta
 from stix2 import (AutonomousSystem,Tool,Software,UserAccount,Relationship)
 from AnotherPlan_vulnerability_cases import Vulns
+from AnotherPlan_config import IS_TAGS
 
 today = datetime.today()
 thirty_days_ago = today - timedelta(days=30)
@@ -38,16 +39,25 @@ class AllProductCases:
         software_object =[]
         soft_vuln_object =[]
         soft_vuln_relate_object =[]
-        tags_to_check = ['Malicious', 'Cobalt Strike', 'C2']
         pattern = re.compile('<title>(.*?)</title>')
+        pattern2 = r'<meta name="description" content="(.*?)" />'
+        match = re.search(pattern2, banner)
         parsed_string = re.search(pattern,banner)
         
-        if parsed_string:
+        if parsed_string :
             extracted_string = parsed_string.group(1)
+        elif "MikroTik bandwidth-test server" in banner:
+            extracted_string = "MikroTik bandwidth-test server"
+        elif match:
+            extracted_string = match.group(1)
+        elif protocol and ( product == "Unknown" or product == ""):
+            extracted_string = protocol
+        elif "Server: " in  banner:
+            extracted_string = str(banner.split('Server: ')[1].split('\n', 1)[0])
         else:
             extracted_string = ""
             
-        if not any(tag in tags_to_check for tag in tags_string):
+        if not any(tag in IS_TAGS for tag in tags_string):
             tags_string = ', '.join(tags_string)
         else:
             tags_string = None
@@ -60,16 +70,18 @@ class AllProductCases:
         if tags_string:
             software = Software(name=tags_string, version=product_version, vendor=product)
             software_object.append(software)
+            
         elif extracted_string == 'None' or extracted_string == '' :
             software = Software(name = product, version = product_version, vendor = product)
             software_object.append(software)
+        
         
         if vuln_exit_check and software_object:
             soft_vuln, soft_vuln_relate = self.vuln.process_vulnerabilities(vuln_list, port_num, product, product_version, software_object)
             soft_vuln_object.extend(soft_vuln)
             soft_vuln_relate_object.extend(soft_vuln_relate)
 
-        return software_object, soft_vuln_object, soft_vuln_relate_object    
+        return software_object, soft_vuln_object, soft_vuln_relate_object   
 
     '''
     Tool Object Object 

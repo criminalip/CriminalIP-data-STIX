@@ -3,15 +3,13 @@ import time
 import sys
 import os
 import ipaddress
-from Enterprise_config import *
+from Enterprise_config import cip_API,BASE_URL,INPUT_FILE_PATH
 from Enterprise_local_whois import Local
 from Enterprise_ip_address_case import IpAddressCases
 from Enterprise_process_port import CourseOfActionCases
 from Enterprise_indicator_cases import IndicatorCases
 from Enterprise_grouping_cases import GroupCases
 from Enterprise_change_stix_type import StixObject
-
-
 
 
 def cip_request(endpoint, method='GET'):
@@ -40,9 +38,7 @@ def cip_request(endpoint, method='GET'):
 
     return data
 
-
 def process_ip_data(ip_data_result_json,ip):
-
     
     #Processing required data
     vpn_info = ip_data_result_json['vpn']['data']
@@ -128,7 +124,7 @@ def read_ips_from_file(INPUT_FILE_PATH):
 def main():
     stix = StixObject()
     request_values = []
-    ips = read_ips_from_file('ip.txt')
+    ips = read_ips_from_file(INPUT_FILE_PATH)
     content(ips)
     for ip in ips:
         # time.sleep(2)
@@ -142,8 +138,7 @@ def content(ips):
     print(">> please wait for a moment!!")
 
 def cip_ip(ip):
-    
-    return cip_request(f"v1/ip/data?ip={ip}&full=true")
+    return cip_request(f"v1/asset/ip/report?ip={ip}&full=true")
 
 
 if __name__ == '__main__':

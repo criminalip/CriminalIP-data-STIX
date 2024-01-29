@@ -39,8 +39,7 @@ Then, you can download the file based on your subscribed Criminal IP plan and in
 
 download file command
 ```shell
-git clone https://github.com/criminalip/CriminalIP_Enterprise_STIX.git
-git clone https://github.com/criminalip/CriminalIP_AnotherPlan_STIX.git
+git clone https://github.com/criminalip/CriminalIP-data-STIX.git
 ```
 
 # Usage

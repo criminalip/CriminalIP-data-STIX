@@ -3,7 +3,7 @@ import time
 import sys
 import os
 import ipaddress
-from AnotherPlan_config import *
+from AnotherPlan_config import cip_API,BASE_URL,INPUT_FILE_PATH
 from AnotherPlan_local_whois import Local
 from AnotherPlan_ip_address_case import IpAddressCases
 from AnotherPlan_process_port import CourseOfActionCases
@@ -126,7 +126,7 @@ def read_ips_from_file(INPUT_FILE_PATH):
 def main():
     stix = StixObject()
     request_values = []
-    ips = read_ips_from_file('ip.txt')
+    ips = read_ips_from_file(INPUT_FILE_PATH)
     content(ips)
     for ip in ips:
         # time.sleep(2)
@@ -140,8 +140,7 @@ def content(ips):
     print(">> please wait for a moment!!")
 
 def cip_ip(ip):
-    
-    return cip_request(f"v1/ip/data?ip={ip}&full=true")
+    return cip_request(f"v1/asset/ip/report?ip={ip}&full=true")
 
 
 if __name__ == '__main__':

@@ -1,7 +1,7 @@
 import json
 import traceback
 from stix2 import Bundle
-from Enterprise_config import *
+from Enterprise_config import OUTPUT_FILE_PATH
 
 class StixObject:
     def __init__(sel) -> None:

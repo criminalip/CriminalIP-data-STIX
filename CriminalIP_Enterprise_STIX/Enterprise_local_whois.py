@@ -12,22 +12,15 @@ class Local:
 
     def create_as_object(self,whois):
         as_info_object =[]
-        # print(whois)
-        as_name = whois[0]['as_name']
-        as_no = whois[0]['as_no']
-        citys = whois[0]['city']
-        regions = whois[0]['region']
-        longitudes = whois[0]['longitude']
-        latitudes = whois[0]['latitude']
-        countrys = whois[0]['org_country_code']
-        
         #Exception as initial value when field value is None
-        citys = citys or "None"
-        regions = regions or "None"
-        longitudes = longitudes or 0.00
-        latitudes = latitudes or 0.00
-        countrys = countrys or "None"
-        
+        as_name = whois[0]['as_name'] or "None"
+        as_no = whois[0]['as_no'] or 00000
+        citys = whois[0]['city'] or "None"
+        regions = whois[0]['region'] or "None"
+        longitudes = whois[0]['longitude'] or 0.00
+        latitudes = whois[0]['latitude'] or 0.00
+        countrys = whois[0]['org_country_code'] or "None"
+
         #Part of the object you create
         as_object = AutonomousSystem(number = as_no, name = as_name)
         as_location = Location(

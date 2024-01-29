@@ -2,7 +2,7 @@ import json
 import traceback
 from datetime import datetime
 from stix2 import (Bundle)
-from AnotherPlan_config import *
+from AnotherPlan_config import OUTPUT_FILE_PATH
 
 now = datetime.now()
 
